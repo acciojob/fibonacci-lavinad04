@@ -1,15 +1,11 @@
-function fibonacci(num) {
-// your code here
-	let num1 = 0;
-	let num2 = 1;
-	let num3 = num1+num2;
+const number = parseInt(prompt('Enter the number of terms: '));
+let n1 = 0, n2 = 1, nextTerm;
 
-	 for (let i = 2; i < num; i++) {
-	 	 num1 = num2;
-		 num2 = num3;
-		 num3 = num1+num2;
-	 }
-      return num3;
+console.log('Fibonacci Series:');
+
+for (let i = 1; i <= number; i++) {
+    console.log(n1);
+    nextTerm = n1 + n2;
+    n1 = n2;
+    n2 = nextTerm;
 }
-
-module.exports = fibonacci;
